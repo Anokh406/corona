@@ -1,0 +1,278 @@
+#preloader {
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#FFF; /* change if the mask should have another color then white */
+    z-index:99999; /* makes sure it stays on top */
+}
+#status {
+    width:100px;
+    height:200px;
+    position:absolute;
+    left:50%; /* centers the loading animation horizontally one the screen */
+    top:50%; /* centers the loading animation vertically one the screen */
+    background-image:url("../images/gif/Circle-Preloader-1.gif");
+    z-index:9999; /* path to your loading animation */
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: cover;
+    margin:-50px 0 0 -50px; /* is width and height divided by two */
+}
+/* .alert{
+    position:fixed !important; 
+    top: 10% !important; 
+
+    right: 15% !important; 
+    width: 250px !important;
+    z-index:9999 !important; 
+    border-radius:10px;
+} */
+/* add account page style  */
+.btn-add-account{
+    background: #4B49AC !important ;
+    font-size: 16px !important;
+    color: white !important;
+}
+.account-first-explainer{
+    background: #fff !important;
+}
+/* End add account page style  */
+/*())))))))))))))))))))))))))))))))(((((((((((((((((((( steps form style */
+html {
+    height: 100%
+}
+
+p {
+    color: grey
+}
+
+#heading {
+    text-transform: uppercase;
+    color: #4B49AC;
+    font-weight: normal
+}
+
+#msform {
+    text-align: center;
+    position: relative;
+    margin-top: 20px
+}
+
+#msform fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 20px;
+    position: relative
+}
+
+.form-card {
+    text-align: left
+}
+
+#msform fieldset:not(:first-of-type) {
+    display: none
+}
+
+#msform input,
+#msform textarea {
+    transition: .3s;
+    padding: 8px 15px 8px 15px;
+    border: none;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    margin-top: 2px;
+    width: 100%;
+    box-sizing: border-box;
+    /* font-family: montserrat; */
+    color: #9b9b9b;
+    background-color: #F3F5FD;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+#msform input:focus,
+#msform textarea:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 10%)  !important;
+    /* border: 1px solid #4B49AC; */
+    outline-width: 0
+}
+
+#msform .action-button {
+    width: 100px;
+    background: transparent;
+    /* font-weight: bold; */
+    color: #5250c7;
+    border: 1px solid #5250c7;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 8px 40px 10px 5px;
+    float: right;
+    transition: .4s;
+}
+
+ #msform .action-button:hover,
+#msform .action-button:focus {
+    background-color: #5250c7;
+    color: white;
+}
+
+#msform .action-button-previous {
+    width: 100px;
+    background: transparent;
+    color: #5250c7;
+    border: 1px solid #4B49AC;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px 10px 0px;
+    float: right
+}
+
+#msform .action-button-previous:hover,
+#msform .action-button-previous:focus {
+    background-color: #5250c7;
+    color: white;
+} 
+
+.card {
+    z-index: 0;
+    border: none;
+    position: relative
+}
+
+.fs-title {
+    font-size: 25px;
+    color: #4B49AC;
+    margin-bottom: 15px;
+    font-weight: normal;
+    text-align: left
+}
+
+.purple-text {
+    color: #4B49AC;
+    font-weight: normal
+}
+
+.steps {
+    font-size: 25px;
+    color: gray;
+    margin-bottom: 10px;
+    font-weight: normal;
+    text-align: right
+}
+
+.fieldlabels {
+    color: gray;
+    text-align: left
+}
+
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    color: lightgrey
+}
+
+#progressbar .active {
+    color: #4B49AC
+}
+
+#progressbar li {
+    list-style-type: none;
+    font-size: 15px;
+    width: 25%;
+    float: left;
+    position: relative;
+    font-weight: 400
+}
+
+#progressbar #account:before {
+    font-family: FontAwesome;
+    content: "\f13e"
+}
+
+#progressbar #personal:before {
+    font-family: FontAwesome;
+    content: "\f007"
+}
+
+#progressbar #payment:before {
+    font-family: FontAwesome;
+    content: "\f030"
+}
+
+#progressbar #confirm:before {
+    font-family: FontAwesome;
+    content: "\f00c"
+}
+
+#progressbar li:before {
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    display: block;
+    font-size: 20px;
+    color: #ffffff;
+    background: lightgray;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    padding: 2px
+}
+
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: lightgray;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    z-index: -1
+}
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+    background: #4B49AC
+}
+
+.progress {
+    height: 20px
+}
+
+.progress-bar {
+    background-color: #4B49AC
+}
+
+.fit-image {
+    width: 100%;
+    object-fit: cover
+}
+.hide {
+    display: none;
+}
+/* .m-1{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 995px;
+    pointer-events: auto;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border: 1px solid #CED4DA;
+    border-radius: 0.3rem;
+    outline: 0;
+} */
+@media (min-width: 576px){
+    .modal-dialog {
+        max-width: 1000px !important;
+    }
+}.footer-modal{
+    background-color: #ffffff;
+}
